@@ -1,14 +1,20 @@
-<script>
-  const urlMap = {
-    "filminside-store": 'https://filminsidestore.notion.site/filminside-store-2468d0f87d2f80ac851acd1ed2c949b6',
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const urlMap = {
+        'filminside-store': 'https://filminsidestore.notion.site/filminside-store-2468d0f87d2f80ac851acd1ed2c949b6',
+      }
 
-  const params = new URLSearchParams(window.location.search)
-  const key = params.get('q')
+      const params = new URLSearchParams(window.location.search)
+      const key = params.get('q')
 
-  if (key && urlMap[key]) {
-    window.location.href = urlMap[key]
-  } else {
-    document.body.innerHTML = '<h1>404 Not Found</h1><p>The requested resource could not be found.</p>';
-  }
-</script>
+      if (key && urlMap[key]) {
+        window.location.href = urlMap[key]
+      } else {
+        document.body.innerHTML = '<h1>404 Not Found</h1><p>The requested resource could not be found.</p>'
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
